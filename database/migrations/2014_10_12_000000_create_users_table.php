@@ -20,6 +20,12 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->binary('photoprofile')->nullable();
+            $table->string('notlp')->unique();
+            $table->string('product')->nullable()->unique();
+            $table->string('order')->nullable()->unique();
+            $table->string('kodepos');
+            $table->string('useraccept');
             $table->timestamps();
         });
     }
