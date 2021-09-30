@@ -1,0 +1,32 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #00A1AB;
+}
+
+h3 {
+    color: #00A1AB;
+}
+
+body {
+    background: #2C394B;
+}
+
+.box {
+    height: 251px;
+    background: #00A1AB;
+}
+
+.bottom {
+    background: #00A1AB;
+}
+
+.bottom .col-sm-3 li a {
+    color: rgba(255, 255, 255, 0.7);
+}
