@@ -11,7 +11,7 @@
         <a class="nav-link" href="/shop">Shop</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Help</a>
+        <a class="nav-link" href="/signup">Help</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Blog</a>

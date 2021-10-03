@@ -1,6 +1,10 @@
 <?php
 
+use App\Http\Controllers\img;
 use Illuminate\Support\Facades\Route;
+use app\Http\Controllers;
+use App\Http\Controllers\imgController;
+use app\Http\imgControllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [imgController::class,'show']);
+
 Route::get('/shop', function () {
     return view('shop');
+});
+Route::get('/signup', function () {
+    return view('signup');
 });
