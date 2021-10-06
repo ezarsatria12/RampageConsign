@@ -14,7 +14,7 @@
         <a class="nav-link" href="/signup">Help</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="/login">Blog</a>
       </li>
     </ul>
   </div>

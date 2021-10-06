@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class img_aset extends Model
+class Img_asset extends Model
 {
-    use HasFactory;
+    protected $fillable = ['user_name', 'user_image'];
 }
+

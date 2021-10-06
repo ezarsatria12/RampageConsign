@@ -22,8 +22,8 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->binary('photoprofile')->nullable();
             $table->string('notlp')->unique();
-            $table->string('product')->nullable()->unique();
-            $table->string('order')->nullable()->unique();
+            $table->foreignId('idproduct')->nullable()->unique();
+            $table->foreignId('idorder')->nullable()->unique();
             $table->string('kodepos');
             $table->string('useraccept');
             $table->timestamps();

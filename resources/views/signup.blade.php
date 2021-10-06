@@ -11,8 +11,8 @@
 <body>
     <div class="container-fluid">
         <div class="col-sm-12">
-            <button>
-                <img height="32" width="32" src="icons/System/arrow-go-back-line.svg" />
+            <button type="button" href="/">
+                <img href="/" height="32" width="32" src="icons/System/arrow-go-back-line.svg" />
             </button>
         </div>
     </div>
@@ -71,11 +71,29 @@
                             </select>
                     </div>
                         <div class="col-sm-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">No telp</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="08xxxxxxx">
-                            </div>
+                            <label for="exampleInputPassword1">kabupaten/kota</label>
+                            <select class="form-control">
+                                <option>Default select</option>
+                                <option>1</option>
+                            </select>
                         </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <label for="exampleInputPassword1">desa/kelurahan</label>
+                            <select class="form-control">
+                                <option>Default select</option>
+                                <option>1</option>
+                            </select>
+                    </div>
+                        <div class="col-sm-6">
+                            <label for="exampleInputPassword1">Kode pos</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="kode pos">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-sm-6">
+                            <button> </button>
                     </div>
                 </div>
                 <div class="col-sm-2">
@@ -84,9 +102,7 @@
             </div>
         </form>
 
-        <form>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Alamat Rumah</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Jl xxxx no xxx">
-            </div>
-            <div class="r
+        
+    </div>
+</body>
+</html>

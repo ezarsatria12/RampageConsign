@@ -9,6 +9,50 @@
     <title>RampageConsign</title>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <button type="button" href="/">
+                <img href="/" height="32" width="32" src="icons/System/arrow-go-back-line.svg" />
+            </button>
+        </div>
+    </div>
+    <div class="container justify-content-center">
+        <div class="col-sm-12 ">
+            <h1>Signup Dulu Yuk.</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form>
+            <div class="row">
+             <div class="col-sm-4">
+                
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Email</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="@gmail.com">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                   
+                   </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                            </div>
+                        </div>
+                   </div>
+                   <div class="col-sm-4">
+   
+                   </div>
+               </div>
+        </form>
+    </div>
 </body>
 </html>

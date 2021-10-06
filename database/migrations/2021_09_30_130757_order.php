@@ -15,9 +15,9 @@ class Order extends Migration
     {
         Schema::create('order', function (Blueprint $table) {
             $table->id();
-            $table->string('idproduk')->unique();
-            $table->string('idpembeli')->unique();
-            $table->string('idpenjual')->unique();
+            $table->foreignId('idproduk')->unique();
+            $table->foreignId('idpembeli')->unique();
+            $table->foreignId('idpenjual')->unique();
             $table->string('kurir');
             $table->string('resi')->nullable()->unique();
             $table->string('status');
