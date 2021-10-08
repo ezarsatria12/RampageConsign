@@ -30,3 +30,7 @@ body {
 .bottom .col-sm-3 li a {
     color: rgba(255, 255, 255, 0.7);
 }
+
+.col-sm-4 {
+    border: olive;
+}

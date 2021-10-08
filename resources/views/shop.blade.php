@@ -11,7 +11,44 @@
 <body>
     @include('partials.nav');
     <div class="content">
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                                <div class="filter">
+                                    <h3>Filter</h3>
+                                        <li>
+                                            <a href="">aaa</a>
+                                        </li>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="row">
+                                    <div class="card" style="width: 184px;">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                        <h6 class="card-title">Card title</h6>
+                                        <p class="card-text">Rp 100000</p>
+                                        <p class="card-text">Rp 100000</p>
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 184px;">
+                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                        <div class="card-body">
+                                        <h6 class="card-title">Card title</h6>
+                                        <p class="card-text">Rp 100000</p>
+                                        <div class="row">
+                                            <p class="card-text">Rp</p>
+                                            <p class="card-text">Rp</p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+            </div>
+            
+        </div>
     </div>
     @include('partials.bottom');
 </body>

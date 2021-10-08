@@ -28,3 +28,10 @@ Route::get('/signup', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/profile', function () {
+    return view('profile');
+});
+Route::get('/signin', [UserController::class,'index']);
+Route::get('/viewproduk', function () {
+    return view('viewproduk');
+});

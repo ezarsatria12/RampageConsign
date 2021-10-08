@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('notlp')->unique();
             $table->foreignId('idproduct')->nullable()->unique();
             $table->foreignId('idorder')->nullable()->unique();
-            $table->string('kodepos');
+            $table->foreignId('idalamat')->unique();
             $table->string('useraccept');
             $table->timestamps();
         });

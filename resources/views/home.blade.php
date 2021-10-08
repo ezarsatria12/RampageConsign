@@ -46,7 +46,24 @@
     </div>
         <div class="container">
             <div class="col-sm-12">
-                <h3>Baru ditambahkan</h3>
+                <div class="text d-flex justify-content-xl-between">
+                    <h3>Baru ditambahkan</h3>
+                    <a href="">Lihat Lengkapnya</a>
+                </div>
+                <div class="col-sm-12">
+                    <div class="card" style="width: 184px;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                        <h6 class="card-title">Card title</h6>
+                        <p class="card-text">Rp 100000</p>
+                        <div class="row">
+                            <p class="card-text">Rp</p>
+                            <p class="card-text">Rp</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
 
             <div class="col-sm-12">

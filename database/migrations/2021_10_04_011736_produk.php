@@ -20,6 +20,7 @@ class Produk extends Migration
             $table->longText('desc');
             $table->longText('spec');
             $table->string('harga');
+            $table->string('jumlah');
             $table->foreignId('idlokasi');
             $table->timestamps();
         }); 
