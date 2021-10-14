@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Img_asset extends Model
 {
-    protected $fillable = ['user_name', 'user_image'];
+    use HasFactory;
 }
 

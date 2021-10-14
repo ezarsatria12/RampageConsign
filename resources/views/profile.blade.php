@@ -11,7 +11,7 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
     <title>RampageConsign</title>
 <body>
-    @include('partials.nav');
+    @include('partials.nav')
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-1 border border-primary">

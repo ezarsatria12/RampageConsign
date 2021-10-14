@@ -13,7 +13,7 @@ class Alamat extends Migration
      */
     public function up()
     {
-        Schema::create('alamat', function (Blueprint $table) {
+        Schema::create('alamats', function (Blueprint $table) {
             $table->id();
             $table->foreignId('idprovinsi');
             $table->foreignId('idkabupaten');
@@ -33,6 +33,6 @@ class Alamat extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('alamat');
+        Schema::dropIfExists('alamats');
     }
 }

@@ -13,10 +13,10 @@ class Produk extends Migration
      */
     public function up()
     {
-        Schema::create('produk', function (Blueprint $table) {
+        Schema::create('produks', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->binary('photo');
+            $table->binary('photo')->nullable();
             $table->longText('desc');
             $table->longText('spec');
             $table->string('harga');
@@ -33,6 +33,6 @@ class Produk extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('produk');
+        Schema::dropIfExists('produks');
     }
 }

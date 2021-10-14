@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\produk;
 
-class UserController extends Controller
+class ProdukContoller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,12 +14,10 @@ class UserController extends Controller
      */
     public function index()
     {
-        return response()->json([
-            "message" => "Daftar user",
-            "data" => User::all()
-        ]);
+        return produk::get();
     }
 
+    
     /**
      * Show the form for creating a new resource.
      *
@@ -38,15 +36,15 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new User();
-        $user->name = $request->name;
-        $user->date_of_birth = $request->date_of_birth;
-        $user->place_of_birth = $request->place_of_birth;
-        $user->gender = $request->gender;
-        $user->email = $request->email;
-        $user->hp = $request->hp;
-        $user->save();
-        return response()->json($user, 202); 
+        return produk::create([//
+            'nama' => $request->nama,
+            'desc' => $request->desc,
+            'spec' => $request->spec,
+            'harga' => $request->harga,
+            'jumlah' => $request->jumlah,
+            'idlokasi' => $request->idlokasi,
+
+        ]);
     }
 
     /**
@@ -57,8 +55,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
-        return response()->json($user);
+        return produk::find($id);
     }
 
     /**
@@ -81,15 +78,14 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::find($id);
-        $user->name = $request->name;
-        $user->date_of_birth = $request->date_of_birth;
-        $user->place_of_birth = $request->place_of_birth;
-        $user->gender = $request->gender;
-        $user->email = $request->email;
-        $user->hp = $request->hp;
-        $user->save();
-        return response()->json($user, 202);
+        return produk::find($id)->update([
+            'nama' => $request->nama,
+            'desc' => $request->desc,
+            'spec' => $request->spec,
+            'harga' => $request->harga,
+            'jumlah' => $request->jumlah,
+            'idlokasi' => $request->idlokasi,
+        ]);
     }
 
     /**
@@ -100,11 +96,6 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::findOrFail($id);
-        $user->delete();
-        return response()->json([
-            "message" => "Data Author Telah dihapus",
-            "data" => $user
-        ]);
+        return produk::find($id)->delete();
     }
 }

@@ -15,6 +15,7 @@ h3 {
 }
 
 body {
+    color: #ffffff;
     background: #2C394B;
 }
 
@@ -33,4 +34,8 @@ body {
 
 .col-sm-4 {
     border: olive;
+}
+
+.card body {
+    color: antiquewhite;
 }

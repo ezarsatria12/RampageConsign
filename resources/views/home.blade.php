@@ -9,7 +9,7 @@
     <title>RampageConsign</title>
 </head>
 <body>
-    @include('partials.nav');
+    @include('partials.nav')
     <div class="content">
         <div class="container d-flex justify-content-xl-between">
             <div class="row">
@@ -25,13 +25,15 @@
         <div class="box">
             <div class="container">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    @foreach ( $image as $img )
                     <div class="carousel-inner">
-                        @foreach ( $image as $img )
+                        
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="{{$img->photo}}" alt="">
                       </div>
-                      @endforeach
+                      
                     </div>
+                    @endforeach
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
@@ -77,6 +79,6 @@
 
         </div>
     </div>
-    @include('partials.bottom');
+    @include('partials.bottom')
 </body>
 </html>

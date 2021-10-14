@@ -32,12 +32,20 @@
                           </div>
                     </div>
                     <div class="col-sm-5">
-                        <h4>tes</h4>
+                        <h1>tes</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis. Nulla porttitor massa id neque. Dolor sit amet consectetur adipiscing elit pellentesque. Nunc sed blandit libero volutpat sed cras ornare. Pulvinar elementum integer enim neque volutpat. Nibh cras pulvinar mattis nunc sed. Viverra vitae congue eu consequat ac felis. Ac ut consequat semper viverra nam libero justo. Mi bibendum neque egestas congue quisque.</p>
                     </div>
                 </div>
+                <div class="desk">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis. Nulla porttitor massa id neque. Dolor sit amet consectetur adipiscing elit pellentesque. Nunc sed blandit libero volutpat sed cras ornare. Pulvinar elementum integer enim neque volutpat. Nibh cras pulvinar mattis nunc sed. Viverra vitae congue eu consequat ac felis. Ac ut consequat semper viverra nam libero justo. Mi bibendum neque egestas congue quisque.</p>
+                </div>
+                <div class="spek">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis. Nulla porttitor massa id neque. Dolor sit amet consectetur adipiscing elit pellentesque. Nunc sed blandit libero volutpat sed cras ornare. Pulvinar elementum integer enim neque volutpat. Nibh cras pulvinar mattis nunc sed. Viverra vitae congue eu consequat ac felis. Ac ut consequat semper viverra nam libero justo. Mi bibendum neque egestas congue quisque.</p>
+                </div>    
             </div>
             <div class="col-sm-2">
                 <h1>tes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus gravida quis blandit turpis. Nulla porttitor massa id neque. Dolor sit amet consectetur adipiscing elit pellentesque. Nunc sed blandit libero volutpat sed cras ornare. Pulvinar elementum integer enim neque volutpat. Nibh cras pulvinar mattis nunc sed. Viverra vitae congue eu consequat ac felis. Ac ut consequat semper viverra nam libero justo. Mi bibendum neque egestas congue quisque.</p>
             </div>
         </div>
        </div>
