@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Img_assetController;
 use App\Http\Controllers\ProdukContoller;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\kategoriController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -19,7 +20,3 @@ use App\Http\Controllers\UserController;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-Route::get('show', [Img_assetController::class, 'show']);
-Route::resource('/produk', ProdukContoller::class)->except('create', 'edit');
-Route::resource('/user', UserController::class)->except('create', 'edit');

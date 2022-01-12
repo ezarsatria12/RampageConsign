@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use App\Models\produk;
 
-class UserController extends Controller
+class ProdukController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('page.authuser.signup');
+        return view('profile.produk');
     }
 
     /**
@@ -35,17 +36,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $validatedData=$request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required|email:dns|unique:users',
-            'notlp' => 'required',
-            'password' => 'required|min:8'
-        ]);
-
-        $validatedData['password'] = bcrypt($validatedData['password']);
-        
-        User::create($validatedData);
-        return redirect('/login');
+        //
     }
 
     /**

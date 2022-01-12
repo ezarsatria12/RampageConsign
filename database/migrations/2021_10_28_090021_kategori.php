@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Alamat extends Migration
+class Kategori extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,11 @@ class Alamat extends Migration
      */
     public function up()
     {
-        Schema::create('alamats', function (Blueprint $table) {
+        Schema::create('kategoris', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('idprovinsi');
-            $table->foreignId('idkabupaten');
-            $table->foreignId('idkecamatan');
-            $table->foreignId('iddesa');
-            $table->string('alamatrumah');
-            $table->string('kodepos');
+            $table->string('kategori');
             $table->timestamps();
-        });
+        }); 
     }
 
     /**
@@ -32,6 +27,6 @@ class Alamat extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('alamats');
+        Schema::dropIfExists('kategoris');
     }
 }

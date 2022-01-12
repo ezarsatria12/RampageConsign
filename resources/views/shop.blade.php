@@ -11,7 +11,10 @@
 <body>
     @include('partials.nav')
     <div class="content">
-        <div class="container">
+        <div class="container mt-4">
+            <div class="col-sm-12 my-4">
+                <h2>Lorem ipsum dolor sit amet</h2>
+            </div>
             <div class="row">
                 <div class="col-sm-2">
                                 <div class="filter">
@@ -24,8 +27,10 @@
                             </div>
                             <div class="col-sm-10">
                                 <div class="row">
-                                    <div class="card" style="width: 184px;">
-                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                    <div class="card m-2" style="width: 184px;">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
                                         <h6 class="card-title">Card title</h6>
                                         <p class="card-text">Rp 100000</p>
@@ -33,8 +38,10 @@
                                         
                                         </div>
                                     </div>
-                                    <div class="card" style="width: 184px;">
-                                        <img class="card-img-top" src="..." alt="Card image cap">
+                                    <div class="card m-2" style="width: 184px;">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                        </div>
                                         <div class="card-body">
                                         <h6 class="card-title">Card title</h6>
                                         <p class="card-text">Rp 100000</p>

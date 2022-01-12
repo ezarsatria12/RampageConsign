@@ -1,9 +1,11 @@
 <?php
 
-use App\Http\Controllers\img;
+
 use Illuminate\Support\Facades\Route;
 use app\Http\Controllers;
-use App\Http\Controllers\Img_assetController;
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\UserController;
+
 
 
 /*
@@ -17,21 +19,34 @@ use App\Http\Controllers\Img_assetController;
 |
 */
 
-Route::get('/', [Img_assetController::class,'index']);
-
+Route::get('/', function () {
+    return view('page.home');
+});
 Route::get('/shop', function () {
-    return view('shop');
+    return view('page.shop');
 });
-Route::get('/signup', function () {
-    return view('signup');
-});
+
 Route::get('/login', function () {
-    return view('login');
+    return view('page.authuser.login');
 });
 Route::get('/profile', function () {
-    return view('profile');
+    return view('profile.profile');
 });
-Route::get('/signin', [UserController::class,'index']);
+
+Route::get('/order', function () {
+    return view('profile.order');
+});
+
+
 Route::get('/viewproduk', function () {
     return view('viewproduk');
 });
+Route::get('/barang', function () {
+    return view('page.viewproduk');
+});
+
+Route::get('signup', [UserController::class, 'index']);
+Route::post('signup', [UserController::class, 'store']);
+
+/*resource*/
+Route::resource('/profile/produk', ProdukController::class);

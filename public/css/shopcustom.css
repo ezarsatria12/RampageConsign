@@ -10,6 +10,10 @@ h1 {
     color: #00A1AB;
 }
 
+h2 {
+    color: #00A1AB;
+}
+
 h3 {
     color: #00A1AB;
 }
@@ -29,4 +33,11 @@ body {
 
 .bottom .col-sm-3 li a {
     color: rgba(255, 255, 255, 0.7);
+}
+/*profile*/
+.navprofile{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid #fff;
 }

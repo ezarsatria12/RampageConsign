@@ -8,7 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class produk extends Model
 {
     protected $fillable = [
-        'nama', 'desc', 'spec', 'harga', 'jumlah','idlokasi'
+        'kategori_id', 'nama', 'desc', 'spec', 'harga', 'jumlah',
     ];
-    public $timestamps = false;
+
+    public function kategori()
+    {
+        return $this->belongsTo(kategori::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(user::class);
+    }
+
+    public function order()
+    {
+        return $this->belongsTo(order::class);
+    }
 }

@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\produk;
 
-class ProdukContoller extends Controller
+class OrderController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,10 +13,9 @@ class ProdukContoller extends Controller
      */
     public function index()
     {
-        return produk::get();
+        //
     }
 
-    
     /**
      * Show the form for creating a new resource.
      *
@@ -36,15 +34,7 @@ class ProdukContoller extends Controller
      */
     public function store(Request $request)
     {
-        return produk::create([//
-            'nama' => $request->nama,
-            'desc' => $request->desc,
-            'spec' => $request->spec,
-            'harga' => $request->harga,
-            'jumlah' => $request->jumlah,
-            'idlokasi' => $request->idlokasi,
-
-        ]);
+        //
     }
 
     /**
@@ -55,7 +45,7 @@ class ProdukContoller extends Controller
      */
     public function show($id)
     {
-        return produk::find($id);
+        //
     }
 
     /**
@@ -78,14 +68,7 @@ class ProdukContoller extends Controller
      */
     public function update(Request $request, $id)
     {
-        return produk::find($id)->update([
-            'nama' => $request->nama,
-            'desc' => $request->desc,
-            'spec' => $request->spec,
-            'harga' => $request->harga,
-            'jumlah' => $request->jumlah,
-            'idlokasi' => $request->idlokasi,
-        ]);
+        //
     }
 
     /**
@@ -96,6 +79,6 @@ class ProdukContoller extends Controller
      */
     public function destroy($id)
     {
-        return produk::find($id)->delete();
+        //
     }
 }

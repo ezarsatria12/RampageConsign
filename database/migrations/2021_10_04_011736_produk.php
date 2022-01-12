@@ -15,13 +15,13 @@ class Produk extends Migration
     {
         Schema::create('produks', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->nullable();
+            $table->foreignId('kategori_id');
             $table->string('nama');
-            $table->binary('photo')->nullable();
             $table->longText('desc');
             $table->longText('spec');
             $table->string('harga');
             $table->string('jumlah');
-            $table->foreignId('idlokasi');
             $table->timestamps();
         }); 
     }

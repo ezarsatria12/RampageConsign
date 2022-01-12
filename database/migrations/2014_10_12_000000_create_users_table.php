@@ -22,9 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->binary('photoprofile')->nullable();
             $table->string('notlp')->unique();
-            $table->foreignId('idproduct')->nullable()->unique();
-            $table->foreignId('idorder')->nullable()->unique();
-            $table->foreignId('idalamat')->unique();
+            $table->foreignId('alamat_id')->nullable()->unique();
             $table->string('useraccept');
             $table->timestamps();
         });
